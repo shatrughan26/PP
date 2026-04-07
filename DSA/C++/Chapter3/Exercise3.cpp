@@ -10,8 +10,18 @@
 using namespace std;
 
 int main(){
-    string message = "I have learned something new again";
-    cout << message << endl << "Length of the string\t" << message.length() << endl;
+    string message = "I have learned something new again\n",
+    prompt("Please input two lines of text : "),
+    str1, str2,sum;
+    cout << message << endl;
+    cout << prompt <<endl;
+
+    getline(cin ,str1);
+    getline(cin, str2);
+
+    sum = str1  + str2;
+    cout << "Two concatenated string\t : " << sum << endl;
+    cout << "length of the concatenated strign " << sum.length() << endl;
      
     return 0;
 }
